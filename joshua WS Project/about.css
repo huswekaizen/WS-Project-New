@@ -34,7 +34,10 @@ nav a{
     color: rgb(34, 34, 34);
     font-size: 16px;
     font-weight: 600;
-    margin-right: 24px;
+    margin-right: 28px;
+} nav a:hover{
+    transition: ease 0.3s;
+    color: #d13232;
 }
 
 .emailButton{
@@ -46,6 +49,9 @@ nav a{
     border-radius: 40px;
     padding: 18px 24px;
     cursor: pointer;
+} .emailButton:hover{
+    transition: ease 0.4s;
+    background-color: #c7c7c7;
 }
 
 .emailButton i{
@@ -149,6 +155,7 @@ nav a{
 
 .fa-arrow-right{
     margin-right: 16px;
+    color: #d13232;
 }
 
 .about-us-bottom-right{
@@ -234,6 +241,9 @@ nav a{
     padding: 12px 20px;
     cursor: pointer;
     margin-top: 30px;
+    transition: ease-in .2s;
+}.upper-footer-right button:hover{
+    background-color: #cf2121;
 }
 
 
@@ -250,7 +260,6 @@ nav a{
     font-weight: lighter;
     line-height: 22px;
     margin-bottom: 24px;
-    max-width: 340px;
 }
 
 .social-media button{
@@ -263,6 +272,10 @@ nav a{
     padding: 14px 22px;
     cursor: pointer;
     margin-right: 10px;
+    transition: ease-in .2s;
+}.social-media button:hover{
+    background-color: #961b1b;
+    border: 1px solid #961b1b;
 }
 
 
@@ -289,4 +302,101 @@ nav a{
     .web{
         max-width: 1024px;
     }
+
+    /************************* FOOOOOOOOOOOOTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRR *************************/
+
+    .upper-footer-right h1{
+        font-size: 38px;
+  
+    }   
+
+    .upper-footer-left h3{
+        font-size: 12px;
+        font-weight: lighter;
+        line-height: 22px;
+        margin-bottom: 24px;
+        max-width: 250px;
+    }
+
+    .upper-footer-right button{
+        background-color: #961b1b;
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+        border: none;
+        border-radius: 40px;
+        padding: 12px 20px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: ease-in .2s;
+    }
+
+    .social-media button{
+        background-color: transparent;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        border: 1px solid #353535;
+        border-radius: 40px;
+        padding: 14px 22px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: ease-in .2s;
+    }
+
+    .lower-footer nav a{
+        font-size: 13px;
+    }
+
+    .lower-footer p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .web{
+        max-width: 768px;
+    }
+
+    /************************* SERVICES *************************/
+
+    .services{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-cards{
+        width: 335px;
+        height: 440px;
+        margin-bottom: 20px;
+    }
+
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+    
 }
