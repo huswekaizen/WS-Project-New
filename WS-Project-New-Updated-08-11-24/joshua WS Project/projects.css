@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter';
+}
+
+.web{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.logo{
+    width: 230px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: 90px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 40px 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 28px;
+} nav a:hover{
+    transition: ease 0.3s;
+    color: #d13232;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Transformations for "X" shape */
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+.emailButton{
+    background-color: #dfdfdf;
+    color: rgba(0, 0, 0, 0.74);
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    padding: 18px 24px;
+    cursor: pointer;
+} .emailButton:hover{
+    transition: ease 0.4s;
+    background-color: #c7c7c7;
+}
+
+.emailButton i{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/************************* PROJECTS *************************/
+
+.projects-bg{
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.projects-h1{
+    font-size: 128px;
+    font-weight: bolder;
+    letter-spacing: -5px;
+    line-height: 64px;
+    padding: 110px 40px 0 40px;
+    margin-bottom: -15px;
+    color: rgba(0, 0, 0, 0.945);
+}
+
+.projects-h1 span{
+    color: #d13232f1;
+}
+
+.our-projects{
+    padding: 110px 40px 70px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.our-projects-container{
+    margin: 0 0 30px 0;
+    width: 585px;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px rgba(194,190,194,1);}
+
+.margin{
+    margin: 0 30px 30px 0;
+    
+}
+
+.our-projects-container img{
+    width: 100%;
+    height: 390px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.projects-name{
+    position: absolute;
+    background-color: #d13232;
+    border-radius: 10px;
+    padding: 8px 11px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    top: 16px;
+    left: 16px;
+}
+
+/************************* FOOOOOOOOOOOOTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRR *************************/
+
+.footer-bg{
+    width: 100%;
+    background-color: #000000;
+}
+
+.footer{
+    padding: 50px 40px 40px 40px;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 30px 0px 60px 0px;
+}
+
+.upper-footer-right{
+    width: 500px;
+}
+
+.upper-footer-right h1{
+    font-size: 44px;
+}
+
+.upper-footer-right button{
+    background-color: #961b1b;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: ease-in .2s;
+}.upper-footer-right button:hover{
+    background-color: #cf2121;
+}
+
+
+.upper-footer-left{
+    width: 450px;
+}
+
+.fa-phone{
+    padding-right: 3px;
+}
+
+.upper-footer-left h3{
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 22px;
+    margin-bottom: 24px;
+    max-width: 340px;
+}
+
+.social-media button{
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #353535;
+    border-radius: 40px;
+    padding: 14px 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: ease-in .2s;
+}.social-media button:hover{
+    background-color: #961b1b;
+    border: 1px solid #961b1b;
+}
+
+
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1px solid rgb(48, 48, 48);
+    padding: 50px 0px 40px 0px;
+}
+
+.lower-footer p{
+    font-size: 16px;
+    color: #919191;
+}
+
+.lower-footer, .lower-footer nav a{
+    color: white;
+    margin-right: 24px;
+}
+
+/************************* MEDIA QUERY *************************/
+
+@media screen and (max-width: 1280px) {
+    .web{
+        max-width: 1024px;
+    }
+
+    /************************* FOOOOOOOOOOOOTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRR *************************/
+
+    .upper-footer-right h1{
+        font-size: 38px;
+  
+    }   
+
+    .upper-footer-left h3{
+        font-size: 12px;
+        font-weight: lighter;
+        line-height: 22px;
+        margin-bottom: 24px;
+        max-width: 250px;
+    }
+
+    .upper-footer-right button{
+        background-color: #961b1b;
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+        border: none;
+        border-radius: 40px;
+        padding: 12px 20px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: ease-in .2s;
+    }
+
+    .social-media button{
+        background-color: transparent;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        border: 1px solid #353535;
+        border-radius: 40px;
+        padding: 14px 22px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: ease-in .2s;
+    }
+
+    .lower-footer nav a{
+        font-size: 13px;
+    }
+
+    .lower-footer p{
+        font-size: 12px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .web{
+        max-width: 768px;
+    }
+
+    
+    .logo{
+        width: 160px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 65px;
+    }
+
+    nav a{
+        font-size: 12px;
+        margin-right: 23px;
+    }
+
+    .emailButton{
+        font-size: 13px;
+        padding: 14px 20px;
+    }
+
+    .projects-h1{
+        text-align: center;
+        font-size: 118px;
+    }
+
+    .our-projects{
+        display: flex;       
+        justify-content: center;
+    }
+
+    .our-projects-container{
+        margin-right: 0;
+    }
+
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .web{
+        max-width: 768px;
+    }
+
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .web{
+        max-width: 640px;
+    }
+
+    .logo{
+        width: 140px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 55px;
+    }
+
+    nav a{
+        font-size: 10px;
+        margin-right: 16px;
+    }
+
+    .emailButton{
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .emailButton i{
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+    .projects-h1{
+        font-size: 105px;
+    }
+
+    
+}
+
+@media screen and (max-width: 640px) {
+    .web{
+        max-width: 475px;
+    }
+
+    .logo{
+        width: 95px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 40px;
+    }
+
+    nav a{
+        font-size: 8px;
+        margin-right: 10px;
+    }
+    .logo{
+        width: 125px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links initially */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 25px;
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .emailButton {
+        display: none; /* Optionally hide the email button */
+    }
+
+    .emailButton.active {
+        display: flex;
+        position: absolute;
+        z-index: 1001;
+        right: 25px;
+        top: 165px;
+        font-size: 7px;
+        padding: 11px;
+        background-color: #cf2121;
+        color: #fff;
+        border-radius: 5px;
+         /* Show when active */
+    }
+
+    .emailButton.active:hover{
+        transition: ease-out 0.3s;
+        background-color: #f11515;
+    }
+
+    .emailButton i{
+        margin-left: 4px;
+        font-size: 10px;
+    }
+
+    .projects-h1{
+        padding-top: 80px;
+        font-size: 74px;
+    }
+
+    .our-projects-container{
+        width: 400px;
+    }
+
+    .our-projects-container img{
+        height: 310px;
+    }
+
+
+
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .upper-footer-right{
+        width: 460px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 34px;
+        
+    }
+
+    .upper-footer-right button{
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upper-footer-left h3{
+        font-size: 11px;
+    }
+
+    .upper-footer-left button{
+        font-size: 11px;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+
+    .lower-footer nav a{
+        font-size: 11px;
+    }
+
+    .lower-footer p{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .web{
+        max-width: 375px;
+    }
+
+    .logo{
+        width: 125px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links initially */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 12px;
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .emailButton {
+        display: none; /* Optionally hide the email button */
+    }
+
+    .emailButton.active {
+        display: flex;
+        position: absolute;
+        z-index: 1001;
+        right: 11px;
+        top: 153px;
+        font-size: 8px;
+        padding: 10px 8.5px 10px 8.5px;
+        background-color: #cf2121;
+        color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; /* Show when active */
+    }
+
+    .emailButton i{
+        margin-left: 4px;
+        font-size: 10px;
+    }
+    
+    .projects-h1{
+        padding-top: 80px;
+        font-size: 60px;
+    }
+
+    .our-projects-container{
+        width: 400px;
+    }
+
+    .our-projects-container img{
+        height: 260px;
+    }
+
+    .projects-name{
+        font-size: 10px;
+    }
+
+    /*******************FOOTER*********************/
+
+    .upper-footer-right{
+        width: 410px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 26px;
+        
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .upper-footer-right{
+        width: 300px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 20px;
+        
+    }
+
+    .upper-footer-right button{
+        font-size: 8px;
+        margin-top: 20px;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upper-footer-left h3{
+        font-size: 11px;
+    }
+
+    .upper-footer-left button{
+        font-size: 8px;
+        padding: 12px 20px;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+
+    .lower-footer nav a{
+        font-size: 9px;
+    }
+
+    .lower-footer p{
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter';
+}
+
+.web{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.logo{
+    width: 230px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: 90px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 40px 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 28px;
+} nav a:hover{
+    transition: ease 0.3s;
+    color: #d13232;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Transformations for "X" shape */
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.emailButton{
+    background-color: #dfdfdf;
+    color: rgba(0, 0, 0, 0.74);
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    padding: 18px 24px;
+    cursor: pointer;
+} .emailButton:hover{
+    transition: ease 0.4s;
+    background-color: #c7c7c7;
+}
+
+.emailButton i{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/************************* ABOUT *************************/
+
+.about-bg{
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.about-h1{
+    font-size: 128px;
+    font-weight: bolder;
+    letter-spacing: -5px;
+    line-height: 64px;
+    padding: 110px 40px 0 40px;
+    margin-bottom: -15px;
+    color: rgba(0, 0, 0, 0.945);
+}
+
+.about-h1 span{
+    color: rgba(209, 50, 50, 0.945);
+}
+
+.about-us{
+    padding: 90px 40px 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us h2{
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+
+.about-us-top{
+    padding: 0px 0px 70px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-top-img{
+    width: 470px;
+    margin: 0 50px 50px 0;  
+}
+
+.about-us-top-img img{
+    width: 100%;
+    height: 350px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: -26px 24px 10px 0px rgba(0,0,0,0.25);  
+}
+
+.about-us-top h3{
+    width: 660px;
+    color: #141414;
+    line-height: 25px;
+} .about-us-top h3 span{
+    color: #d13232;
+}
+
+.about-us-bottom{
+    padding: 40px 0px 70px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-bottom-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-bottom-left h2{
+    font-size: 52px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    line-height: 64px;
+    color: rgba(204, 204, 204, 0.945);
+}
+
+.social-links{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.social-links a{
+   text-decoration: none;
+   color: #000000;
+   font-size: 34px;
+   font-weight: bolder;
+   margin-bottom: 26px;
+}
+
+.fa-arrow-right{
+    margin-right: 16px;
+    color: #d13232;
+}
+
+.about-us-bottom-right{
+    width: 660px;
+}
+
+.about-us-bottom-right h2{
+    font-size: 68px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: rgba(204, 204, 204, 0.945);
+}
+
+.recommendations{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.fa-user{
+    font-size: 28px;
+    margin-left: 18px;
+}
+
+.information-name{
+    margin: 10px 0 10px 10px;
+}
+
+.information-name h3{
+    margin: 0 0 3px 0;
+}
+
+.recommendations p{
+    font-size: 14px;
+    padding: 0 18px 18px 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+/************************* FOOOOOOOOOOOOTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRR *************************/
+
+.footer-bg{
+    width: 100%;
+    background-color: #000000;
+}
+
+.footer{
+    padding: 50px 40px 40px 40px;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 30px 0px 60px 0px;
+}
+
+.upper-footer-right{
+    width: 500px;
+}
+
+.upper-footer-right h1{
+    font-size: 44px;
+}
+
+.upper-footer-right button{
+    background-color: #961b1b;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: ease-in .2s;
+}.upper-footer-right button:hover{
+    background-color: #cf2121;
+}
+
+
+.upper-footer-left{
+    width: 450px;
+}
+
+.fa-phone{
+    padding-right: 3px;
+}
+
+.upper-footer-left h3{
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+.social-media button{
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #353535;
+    border-radius: 40px;
+    padding: 14px 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: ease-in .2s;
+}.social-media button:hover{
+    background-color: #961b1b;
+    border: 1px solid #961b1b;
+}
+
+
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1px solid rgb(48, 48, 48);
+    padding: 50px 0px 40px 0px;
+}
+
+.lower-footer p{
+    font-size: 16px;
+    color: #919191;
+}
+
+.lower-footer, .lower-footer nav a{
+    color: white;
+    margin-right: 24px;
+}
+
+/************************* MEDIA QUERY *************************/
+
+@media screen and (max-width: 1280px) {
+    .web{
+        max-width: 1024px;
+    }
+
+    .about-us-bottom-left h2{
+        font-size: 45px;
+    }
+
+    .about-us-bottom-right h2{
+        font-size: 55px;
+    }
+
+    /************************* FOOOOOOOOOOOOTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRR *************************/
+
+    .upper-footer-right h1{
+        font-size: 38px;
+  
+    }   
+
+    .upper-footer-left h3{
+        font-size: 12px;
+        font-weight: lighter;
+        line-height: 22px;
+        margin-bottom: 24px;
+        max-width: 250px;
+    }
+
+    .upper-footer-right button{
+        background-color: #961b1b;
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+        border: none;
+        border-radius: 40px;
+        padding: 12px 20px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: ease-in .2s;
+    }
+
+    .social-media button{
+        background-color: transparent;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        border: 1px solid #353535;
+        border-radius: 40px;
+        padding: 14px 22px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: ease-in .2s;
+    }
+
+    .lower-footer nav a{
+        font-size: 13px;
+    }
+
+    .lower-footer p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .web{
+        max-width: 768px;
+    }
+
+    
+    .logo{
+        width: 160px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 65px;
+    }
+
+    nav a{
+        font-size: 12px;
+        margin-right: 23px;
+    }
+
+    .emailButton{
+        font-size: 13px;
+        padding: 14px 20px;
+    }
+
+    .about-us-top{
+        flex-direction: column-reverse;
+    }
+
+    .about-us-top h3{
+        margin-bottom: 40px;
+    }
+
+    .about-us-top-img{
+        width: 470px;
+          
+    }
+    
+    .about-us-top-img img{
+        width: 100%;
+        height: 350px;
+        border-radius: 50px;
+        object-fit: cover;
+       
+    }
+
+    .about-us-bottom{
+        flex-direction: column-reverse;
+    }
+
+    .about-us-bottom-left h2{
+        margin-top: 30px;
+    }
+
+
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .web{
+        max-width: 640px;
+    }
+
+    
+    .logo{
+        width: 140px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 55px;
+    }
+
+    nav a{
+        font-size: 10px;
+        margin-right: 16px;
+    }
+
+    .emailButton{
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .emailButton i{
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+    .about-us h2, h1{
+        text-align: center;
+    }
+
+    .about-us-top{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-top h3{
+        width: 100%;
+        color: #141414;
+        line-height: 25px;
+    }
+
+    .about-us-top-img{
+        margin: 0;
+    }
+
+
+    .recommendations{
+        width: 600px;
+    }
+
+    .recommendations p{
+        font-size: 14px;
+        padding: 0 18px 18px 18px;
+        line-height: 18px;
+    }
+
+    .about-us-bottom-right h2{
+        width: 560px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .web{
+        max-width: 475px;
+    }
+
+    .logo{
+        width: 95px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 40px;
+    }
+
+    nav a{
+        font-size: 8px;
+        margin-right: 10px;
+    }
+    .logo{
+        width: 125px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links initially */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 25px;
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .emailButton {
+        display: none; /* Optionally hide the email button */
+    }
+
+    .emailButton.active {
+        display: flex;
+        position: absolute;
+        z-index: 1001;
+        right: 25px;
+        top: 165px;
+        font-size: 7px;
+        padding: 11px;
+        background-color: #cf2121;
+        color: #fff;
+        border-radius: 5px;
+         /* Show when active */
+    }
+
+    .emailButton.active:hover{
+        transition: ease-out 0.3s;
+        background-color: #f11515;
+    }
+
+    .emailButton i{
+        margin-left: 4px;
+        font-size: 10px;
+    }
+
+    .about-us-top-img{
+        width: 390px;
+        margin: 0 50px 50px 0;  
+    
+    }
+
+    .about-us-top-img img{
+        height: 300px;
+        margin: 0;
+    }
+
+    .about-h1{
+        font-size: 98px;
+    }
+
+    .recommendations{
+        width: 360px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .recommendations p{
+        font-size: 14px;
+        padding: 0 18px 18px 18px;
+        line-height: 18px;
+    }
+
+    .about-us-bottom-right h2{
+        width: 395px;
+        font-size: 48px;
+    }
+
+    .about-us-bottom-right{
+        width: 395px;
+    }
+
+    
+
+    
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .upper-footer-right{
+        width: 460px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 34px;
+        
+    }
+
+    .upper-footer-right button{
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upper-footer-left h3{
+        font-size: 11px;
+    }
+
+    .upper-footer-left button{
+        font-size: 11px;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+
+    .lower-footer nav a{
+        font-size: 11px;
+    }
+
+    .lower-footer p{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .web{
+        max-width: 375px;
+    }
+
+    .logo{
+        width: 125px;
+        margin-top: 8px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links initially */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 12px;
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .emailButton {
+        display: none; /* Optionally hide the email button */
+    }
+
+    .emailButton.active {
+        display: flex;
+        position: absolute;
+        z-index: 1001;
+        right: 11px;
+        top: 153px;
+        font-size: 8px;
+        padding: 10px 8.5px 10px 8.5px;
+        background-color: #cf2121;
+        color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; /* Show when active */
+    }
+
+    .emailButton i{
+        margin-left: 4px;
+        font-size: 10px;
+    }
+    
+    .about-h1{
+        font-size: 76px;
+    }
+
+    .about-us-top-img{
+        width: 320px; 
+    }
+
+    .about-us-top-img img{
+        height: 260px; 
+    }
+
+    .about-us-bottom-right{
+        width: 375px;
+    }
+
+    .about-us-bottom-right h2{
+        font-size: 40px;
+        width: 310px;
+    }
+
+    .recommendations{
+        width: 310px;
+    }
+
+    .about-us-top-img{
+        width: 290px; 
+    
+    }
+
+    .about-us-top-img img{
+        height: 240px;
+        margin: 0;
+    }
+
+
+    /*******************FOOTER*********************/
+
+    .upper-footer-right{
+        width: 410px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 26px;
+        
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    
+    /************************* FOOTER *************************/
+
+    .footer{
+        text-align: center;
+    }
+
+    .upper-footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .upper-footer-right{
+        width: 300px;
+    }
+
+    .upper-footer-right h1{
+        font-size: 20px;
+        
+    }
+
+    .upper-footer-right button{
+        font-size: 8px;
+        margin-top: 20px;
+    }
+
+    .upper-footer-left{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upper-footer-left h3{
+        font-size: 11px;
+    }
+
+    .upper-footer-left button{
+        font-size: 8px;
+        padding: 12px 20px;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 30px 0px;
+        margin: 0;
+    }
+
+    .lower-footer nav{
+        margin-bottom: 20px;
+    }
+
+    .lower-footer nav a{
+        font-size: 9px;
+    }
+
+    .lower-footer p{
+        font-size: 9px;
+    }
+}
